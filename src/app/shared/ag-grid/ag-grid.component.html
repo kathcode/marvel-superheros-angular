@@ -1,0 +1,15 @@
+<ag-grid-angular
+    style="width: 400px; height: 400px;"
+    class="ag-theme-alpine"
+    [rowData]="rowData.value"
+    [columnDefs]="columnDefs"
+    [rowModelType]="rowModelType"
+    [rowBuffer]="rowBuffer"
+    [paginationPageSize]="paginationPageSize"
+    [cacheBlockSize]="cacheBlockSize"
+    [maxBlocksInCache]="maxBlocksInCache"
+    [getRowNodeId]="getRowNodeId"
+    (gridReady)="onGridReady($event)"
+    (rowDataUpdated)="rowDataUpdated($event)"
+    >
+</ag-grid-angular>
