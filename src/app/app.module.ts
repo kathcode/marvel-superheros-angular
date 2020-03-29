@@ -7,8 +7,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 
-// Services
-import { MarvelService } from './services/marvel.service';
+// Data
+import { MarvelService } from './data/services/marvel.service';
 
 @NgModule({
   declarations: [

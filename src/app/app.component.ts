@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MarvelService } from './services/marvel.service';
+import { MarvelService } from './data/services/marvel.service';
 import { BehaviorSubject } from 'rxjs';
 
 @Component({
@@ -9,7 +9,7 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class AppComponent {
   // Observable data to share with sg grid component
-  private characters = new BehaviorSubject<any>([]);
+  characters = new BehaviorSubject<any>([]);
   // Pagination info
   offset = 0;
   limit = 10;
